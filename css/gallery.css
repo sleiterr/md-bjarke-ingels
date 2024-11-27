@@ -7,37 +7,15 @@
   height: 50px;
 }
 
-/*? STICKY NAVIGATION */
 
-.sticky .bar {
-  background-color: rgba(35, 98, 156, 0.849);
-}
-
-.sticky .nav-links {
-  color: #fff;
-}
-
-/*? STICKY NAVIGATION */
-
-.sticky .header {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 9rem;
-  padding-top: 0;
-  padding-bottom: 0;
-  /* background-color: rgba(255, 255, 255, 0.8); */
-  background-color: rgba(255, 255, 255, 0.9);
-  z-index: 999;
-  box-shadow: 0 0.06em 12px rgba(0, 0, 0, 0.4);
-}
 
 /**=======================*/
 /*? GALLERY-SECTION */
 /**=======================*/
 
 .gallery-section {
+  width: 100%;
+  height: 100%;
 }
 
 .gallery-container {

@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const sectionHeroEL = document.querySelector(".section-hero");
 
-const obs = new IntersectionObserver /* Intersection Observer API */(
-  function (entries) {
+const obs = new IntersectionObserver(
+  /* Intersection Observer API */ function (entries) {
     const ent = entries[0];
     // console.log(ent);
     // console.log("RootMargin:", "-100px");
@@ -74,9 +74,23 @@ allLinks.forEach(function (link) {
       // console.log(sectionEL);
       sectionEL.scrollIntoView({ behavior: "smooth" });
     }
-
-    //  Close mobile navigation
-    // if (link.classList.contains("main-nav-link"))
-    //   headerEL.classList.toggle("nav-open");
   });
+});
+
+//! check screen size for "items-2" [data-aos="fade-left"]AOS
+
+document.addEventListener("DOMContentLoaded", function () {
+  const items2 = document.querySelector(".items-2");
+
+  function checkScreenSize() {
+    if (window.innerWidth <= 768) {
+
+      items2.setAttribute("data-aos", "fade-left");
+    } else {
+      items2.removeAttribute("data-aos");
+    }
+    AOS.refresh();
+  }
+  checkScreenSize();
+  window.addEventListener("resize", checkScreenSize);
 });

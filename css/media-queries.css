@@ -128,7 +128,7 @@
   .hero-title {
     display: none;
   }
-  
+
   .hero-title-mob {
     display: flex;
     align-items: flex-end;
@@ -142,7 +142,6 @@
     margin-bottom: 0;
     width: 100%;
     height: 100%;
-
   }
 
   .mob-span {
@@ -214,6 +213,7 @@
   .items-3 {
     grid-area: 2 / 1 / 3 / 3;
   }
+
 
   /**=======================*/
   /*? AMAGE-SECTION */

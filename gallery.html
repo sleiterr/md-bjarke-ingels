@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="./css/icons.css" />
     <link rel="stylesheet" href="./css/gallery.css" />
     <link rel="stylesheet" href="./css/media-queries.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header stik">
       <nav class="nav-bar">
         <div class="logo-box">
           <a href="./index.html" class="logo-link">
@@ -51,11 +52,11 @@
         <div class="gallery-container container">
           <h2 class="gallery-title">Gallery</h2>
           <div class="gallery">
-            <img src="./Img/gallery/gallery-1.jpg" alt="" class="img-1">
-            <img src="./Img/gallery/gallery-2.jpg" alt="" class="img-2">
-            <img src="./Img/gallery/gallery-4.jpg" alt="" class="img-3">
-            <img src="./Img/gallery/gallery-5.jpg" alt="" class="img-4">
-            <img src="./Img/gallery/gallery-3.jpg" alt="" class="img-5">
+            <img src="./Img/gallery/gallery-1.jpg" alt="" class="img-1" data-aos="zoom-in-right"/>
+            <img src="./Img/gallery/gallery-2.jpg" alt="" class="img-2" data-aos="zoom-in-right"/>
+            <img src="./Img/gallery/gallery-4.jpg" alt="" class="img-3" data-aos="zoom-in-left"/>
+            <img src="./Img/gallery/gallery-5.jpg" alt="" class="img-4" data-aos="zoom-in-left"/>
+            <img src="./Img/gallery/gallery-3.jpg" alt="" class="img-5" data-aos="zoom-in-right"/>
           </div>
           <!-- MODAL -->
           <div id="modal" class="modal">
@@ -81,6 +82,12 @@
       </div>
     </footer>
     <script src="./js/script.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+      });
+    </script>
     <!-- <script src="./js/gallery.js" defer></script> -->
   </body>
 </html>

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/icons.css" />
     <link rel="stylesheet" href="./css/media-queries.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="header">
@@ -53,7 +54,9 @@
           <div class="border-hero">
             <div class="hero-content">
               <h1 class="hero-title">Bjarke Ingels</h1>
-              <h1 class="hero-title-mob">Bjarke<span class="mob-span">Ingels</span></h1>
+              <h1 class="hero-title-mob">
+                Bjarke<span class="mob-span">Ingels</span>
+              </h1>
               <div class="hero-desc">
                 <div class="marks-left">
                   <i class="icon-uniE90D"></i>
@@ -82,15 +85,15 @@
               <li class="list-title">Architecture</li>
             </ul> -->
           <ul class="services-icon-list">
-            <li class="list-item items-1">
+            <li class="list-item items-1" data-aos="fade-right">
               <i class="icon-swatchbook-solid"></i>
               <h3 class="list-title">Design</h3>
             </li>
-            <li class="list-item items-2">
+            <li class="list-item items-2" data-aos="fade-left">
               <i class="icon-shapes-solid"></i>
               <h3 class="list-title">Buld</h3>
             </li>
-            <li class="list-item items-3">
+            <li class="list-item items-3" data-aos="fade-left">
               <i class="icon-compass-drafting-solid"></i>
               <h3 class="list-title">Architecture</h3>
             </li>
@@ -103,7 +106,12 @@
         <div class="amager-container container">
           <h2 class="amager-title">architecture</h2>
           <div class="flex-amager">
-            <div class="box-content">
+            <div
+              class="box-content"
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+            >
               <div class="black-box">
                 <div class="border">
                   <div class="amager-content">
@@ -125,7 +133,12 @@
               </div>
             </div>
             <div class="image-box">
-              <div class="border-box">
+              <div
+                class="border-box"
+                data-aos="fade-left"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+              >
                 <img
                   src="./Img/Amager-Bakke/Amager-Bakke.jpg"
                   alt="Amager-Bakke"
@@ -166,7 +179,12 @@
       <!-- MOUNTAIN-SECTION -->
       <section class="mountain-section" id="mountain">
         <div class="mountain-container container">
-          <div class="border-box">
+          <div
+            class="border-box"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               src="./Img/Mountain-Dwellings/Mountain-Dwellings.jpg"
               alt=""
@@ -180,7 +198,12 @@
           </div>
 
           <div class="mountain-content">
-            <div class="black-box">
+            <div
+              class="black-box"
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+            >
               <div class="border">
                 <div class="amager-content">
                   <h2 class="nr-02">02</h2>
@@ -216,5 +239,11 @@
       </div>
     </footer>
     <script src="./js/script.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+      });
+    </script>
   </body>
 </html>
