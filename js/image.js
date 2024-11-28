@@ -8,13 +8,16 @@ const images = [
   "../Img/gallery/gallery-3.jpg",
 ];
 
-images.forEach((element) => {
-  gallery.innerHTML += `<img src='${element}' class="img">`;
+const imageClasses = ["img-1", "img-2", "img-3", "img-4", "img-5"];
+
+images.forEach((element, index) => {
+  gallery.innerHTML += `<img src='${element}' class="img ${imageClasses[index]}">`;
 });
 
 //! modal gallery light-box
 
 gallery.addEventListener("click", (e) => {
+  /* e.target.matches("img") */
   if (e.target.tagName === "IMG") {
     const imgSrc = e.target.getAttribute("src");
 
