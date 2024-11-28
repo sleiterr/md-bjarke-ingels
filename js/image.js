@@ -12,6 +12,15 @@ images.forEach((element) => {
   gallery.innerHTML += `<img src='${element}' class="img">`;
 });
 
-//! modal gallery
+//! modal gallery light-box
 
+gallery.addEventListener("click", (e) => {
+  if (e.target.tagName === "IMG") {
+    const imgSrc = e.target.getAttribute("src");
 
+    const imageInstance = basicLightbox.create(`
+      <img src="${imgSrc}" alt="Modal image" >`);
+
+    imageInstance.show();
+  }
+});
