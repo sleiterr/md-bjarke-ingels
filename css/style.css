@@ -36,6 +36,7 @@ html {
   font-size: 0.625rem;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  /* height: 100%; */
 }
 
 body {
@@ -246,9 +247,10 @@ button {
   /* background: url("../Img/Bjarke-Ingels/bjarke-ingels-group 1.jpg") center /
     cover no-repeat; */
   background: url("../Img/Bjarke-Ingels/bjarke-ingels-group-1.jpg");
-  /* background-size: 100% 100%; */
-  width: 100vw;
-  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 130vh;
 }
 
 .hero-container {
@@ -422,9 +424,6 @@ button {
 
   pointer-events: none;
 }
-
-
-
 
 /**=======================*/
 /*? ABOUT */
