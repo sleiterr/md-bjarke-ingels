@@ -84,7 +84,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function checkScreenSize() {
     if (window.innerWidth <= 768) {
-
       items2.setAttribute("data-aos", "fade-left");
     } else {
       items2.removeAttribute("data-aos");
@@ -94,3 +93,4 @@ document.addEventListener("DOMContentLoaded", function () {
   checkScreenSize();
   window.addEventListener("resize", checkScreenSize);
 });
+
