@@ -22,8 +22,19 @@ gallery.addEventListener("click", (e) => {
     const imgSrc = e.target.getAttribute("src");
 
     const imageInstance = basicLightbox.create(`
-      <img src="${imgSrc}" alt="Modal image" >`);
+      <div class='lightbox'>
+        <div class='btn' aria-label='close'>
+          <i class='icon-close btn-close'></i>
+        </div>
+        <img src='${imgSrc}' alt='Modal image' class='modal-img'>
+      </div>
+    `);
 
     imageInstance.show();
+
+    const closeBtn = document.querySelector(".btn-close");
+    closeBtn.addEventListener("click", () => {
+      imageInstance.close();
+    });
   }
 });
