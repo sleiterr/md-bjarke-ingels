@@ -1,11 +1,11 @@
 const gallery = document.querySelector(".gallery");
 
 const images = [
-  "../Img/gallery/gallery-1.jpg",
-  "../Img/gallery/gallery-2.jpg",
-  "../Img/gallery/gallery-4.jpg",
-  "../Img/gallery/gallery-5.jpg",
-  "../Img/gallery/gallery-3.jpg",
+  "./Img/gallery/gallery-1.jpg",
+  "./Img/gallery/gallery-2.jpg",
+  "./Img/gallery/gallery-4.jpg",
+  "./Img/gallery/gallery-5.jpg",
+  "./Img/gallery/gallery-3.jpg",
 ];
 
 const imageClasses = ["img-1", "img-2", "img-3", "img-4", "img-5"];
