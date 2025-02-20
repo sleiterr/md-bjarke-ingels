@@ -22,15 +22,31 @@ gallery.addEventListener("click", (e) => {
     const imgSrc = e.target.getAttribute("src");
 
     const imageInstance = basicLightbox.create(`
+      <div class='btn' aria-label='close'>
+        <i class='icon-close btn-close'></i>
+      </div>
       <div class='lightbox'>
-        <div class='btn' aria-label='close'>
-          <i class='icon-close btn-close'></i>
+      
+
+        <div class="arrow-left">
+          <i class='icon-chevron-right'></i>
         </div>
-        <img src='${imgSrc}' alt='Modal image' class='modal-img'>
+
+
+        <div class='img-box'>
+          <img src='${imgSrc}'alt='Modal image' class='modal-img'>
+        </div>
+
+        <div class="arrow-right">
+          <i class='icon-chevron-right'></i>
+        </div>
+        
       </div>
     `);
 
     imageInstance.show();
+
+    // document.querySelector('.lightbox').style.pointerEvents = 'none'
 
     const closeBtn = document.querySelector(".btn-close");
     closeBtn.addEventListener("click", () => {
